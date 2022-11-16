@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fruit Shop </title>
+    <script>
+        function ComputeCost()
+        {
+            var tax=0,total=0;
+            var price=0;
+            var apple=0,orange=0,mango=0;
+            if (document.getElementById("Apple").checked)
+                apple=parseInt(document.getElementById("F1").value);
+            if (document.getElementById("Orange").checked)
+                orange=parseInt(document.getElementById("F2").value);
+            if (document.getElementById("Mango").checked)
+                mango=parseInt(document.getElementById("F3").value);
+            
+                apple=59*apple;
+                orange=39*orange;
+                mango=49*mango;
+                total=apple+orange+mango;
+                tax=total*0.05;
+
+                price=total+tax;
+                alert("Ur purchase order is as follows" +"\n" + "Ur total amount is" + total + "\n" + "Tax amount is " + tax.toFixed(3) + "\n" + "Ur tatal Payable amount is " + price );
+                //alert("Ur purchase order is as follows" + "\n" + "Apple for" + apple + "Kg=" + ap + "\n" + "Orange for" + or + "Kg= " + or +  "\n" +"Mango for" + ma + "Kg= " + ma + "Ur total amount is" + total + "\n" + "Tax amount is " + tax.toFixed(3) + "\n" + "Ur tatal Payable amount is " + price );
+            
+        }
+    </script>
+</head>
+<body style="background-color: bisque;">
+    <h1> Fruit Online Order Form </h1>
+    <form action="">    
+    <input type="checkbox" name="Apple" name="Apple" id="Apple"> Apple (59 Rs) <input type="text" name="F1" id="F1" size="2" > Kg 
+    <br>
+    <input type="checkbox" name="Orange" name="Orange" id="Orange"> Orange (39 Rs) <input type="text" name="F2" id="F2" size="2"> Kg
+    <br>
+    <input type="checkbox" name="Mango" name="Mango" id="Mango"> Mango (49 Rs) <input type="text" name="F3" id="F3" size="2"> Kg
+    <br>
+    <input type="Submit" onclick="ComputeCost()" value="Submit Order">  <input type="reset"  value="Clear Form">
+    </form> 
+</body>
+</html>

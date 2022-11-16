@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vowels  Program </title>
+    
+</head>
+<body>
+    <h1> Demonstration of Program 6A </h1>
+
+    <script>
+    
+        var input = prompt("Enter a Input String...");
+        var cnt=0;
+        for(var i=0; i<input.length; i++)
+        {
+            var cha=input.charAt(i);
+
+            if(cha.match(/[AEIOUaeiou]/)) 
+            {
+                document.write("Input String is: ", input, "<br>", 
+                "Left most vowel is: ", cha, "<br>", 
+                "Vowel is at position:", i+1, "<br>", "<br>");
+            }
+            else
+            cnt=1;
+        }
+        if(cnt==1)
+        document.write("Vowel not found");
+
+    </script>
+</body>
+</html>

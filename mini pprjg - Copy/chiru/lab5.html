@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function validate()
+    {
+        var usn,sem;
+        var pattern1=/\d\w\w\d\d\w\w\w\d\d\d/i;
+        var pattern2=/\d/i;
+        usn=document.getElementById('usn');
+        sem=document.getElementById('sem');
+        svalue=parseInt(document.getElementById("sem").value);
+        
+        if(usn.value.match(pattern1) && !sem.value.match(pattern2)) 
+            alert("Invalid SEM");
+        else if(!usn.value.match(pattern1) && sem.value.match(pattern2)) 
+            alert("Invalid USN");
+
+        
+        else if(!usn.value.match(pattern1) && !sem.value.match(pattern2)) 
+            alert("Invalid USN and SEM");
+
+            else if(usn.value.match(pattern1) && sem.value.match(pattern2)) 
+                if(svalue>4 || svalue<1)
+                    alert("Ivalid Sem");
+                else
+                alert("valid USN and SEM");
+
+    }
+</script>
+<body>
+    <form>
+        Enter  USN: <input type="text" name="usn" id="usn"/>    <br>    <br>
+        Enter  SEM: <input type="text" name="sem" id="sem"/>    <br>    <br>
+        <input type="submit" value="Check" onclick="validate()"/>
+    </form>
+</body>
+</html>

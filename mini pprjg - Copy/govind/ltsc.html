@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+    body{background-image: url("jkr.jpg");
+    background-size: cover;
+    }
+
+
+    
+    .navbar ul li{
+        display: block;
+        display: inline;
+  position:relative;
+  text-decoration:none; 
+  padding:5px;
+  font-size:18px;
+  font-family: sans-serif;
+  color:#fff;
+  text-transform:uppercase;
+  transition:0.5s;    }
+  
+ul li{
+    display: inline;
+  list-style:none;
+  margin:0 20px;
+  transition:0.5s;
+}
+
+ul li a{
+    margin-left: 200px;
+   position:relative;
+  text-decoration:none;
+  padding:5px;
+  font-size:18px;
+  font-family: sans-serif;
+  color:#fff;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+
+ul:hover li a{
+  transform:scale(1.5);
+  opacity:0.2;
+  filter:blur(5px);
+}
+
+ul li a:hover{
+  transform:scale(2);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color:#fff;
+}
+
+ul li a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#ff497c;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+
+ul li a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+    
+</style></head>
+<body >
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand" style="color:#fff">DEVELOPER PROTFOLIO
+                        <div class="w3-bar w3-black">
+                   <ul><li><a href="govihome.html"class="w3-bar w3-black">home</a></li>
+                    <li><a href="goviqual.html"class="w3-bar w3-black"> qualifications </a></li>
+        
+                    <li><a href="goviskills.html"class="w3-bar w3-black">skills </a></li>
+                    <li><a href="goviprojects.html"class="w3-bar w3-black">projects</a></li>
+                    
+                    
+                    <li> <a href="goviservices.html"class="w3-bar w3-black"> services </a></li>
+                    <li><a href="govicontact.html"class="w3-bar w3-black"> contact</a></li>
+                    </ul>
+                         </div>
+                     </div>
+                </div>
+            </div>
+         </nav>
+    </header>
+
+
+    <div class="skils">
+        <h3> skills :</h3>
+        
+        <div class="img1" >
+           <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="vectorlogo.zone" height="50" width="150">
+           <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="vectorlogo.zone" height="50" width="120">
+           <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="90">
+           <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
+           <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="vectorlogo.zone" height="50" width="190">
+           
+        </div>
+       </div>
+
+</body>
+</html>

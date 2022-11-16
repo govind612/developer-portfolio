@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Limit value and its square</title>
+</head>
+<body style="background-color: bisque;">
+    <h1> Program to generate a table and its sqares</h1>
+    <script>
+        var limit=prompt("Enter the limit value");
+        var msg="";
+        var msg1="";
+        var res="0";
+        for( var x=1;x<=limit;x++)
+        {
+            res=x*x;
+            msg=msg + x + "*" + x + "=" + res + "\n";
+            msg1=msg1 + x + "*" + x + "=" + res + "<br>";
+        }
+        alert(msg);
+        document.write(msg1);
+    </script>
+</body>
+</html>
